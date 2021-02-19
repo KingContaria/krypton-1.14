@@ -12,10 +12,8 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import java.security.GeneralSecurityException;
-import java.security.Key;
 
 @Mixin(ServerLoginNetworkHandler.class)
 public class ServerLoginNetworkHandlerMixin {
@@ -28,14 +26,8 @@ public class ServerLoginNetworkHandlerMixin {
         ((ClientConnectionEncryptionExtension) this.connection).setupEncryption(this.secretKey);
     }
 
-    @Redirect(method = "onKey", at = @At(value = "INVOKE", target = "Lnet/minecraft/network/NetworkEncryptionUtils;cipherFromKey(ILjava/security/Key;)Ljavax/crypto/Cipher;"))
-    private Cipher onKey$ignoreJavaCipherInitialization(int ignored1, Key ignored2) {
-        // Turn the operation into a no-op.
-        return null;
-    }
-
-    @Redirect(method = "onKey", at = @At(value = "INVOKE", target = "Lnet/minecraft/network/ClientConnection;setupEncryption(Ljavax/crypto/Cipher;Ljavax/crypto/Cipher;)V"))
-    public void onKey$ignoreMinecraftEncryptionPipelineInjection(ClientConnection connection, Cipher ignored1, Cipher ignored2) {
+    @Redirect(method = "onKey", at = @At(value = "INVOKE", target = "Lnet/minecraft/network/ClientConnection;setupEncryption(Ljavax/crypto/SecretKey;)V"))
+    public void onKey$ignoreMinecraftEncryptionPipelineInjection(ClientConnection connection, SecretKey ignored) {
         // Turn the operation into a no-op.
     }
 }
