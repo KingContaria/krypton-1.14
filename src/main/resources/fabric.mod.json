@@ -2,14 +2,15 @@
   "schemaVersion": 1,
   "id": "krypton",
   "version": "${version}",
-  "name": "Krypton",
-  "description": "A Fabric mod that optimizes the Minecraft networking stack and entity tracker.",
+  "name": "Krypton 1.16.1 Backport",
+  "description": "A Fabric mod that optimizes the Minecraft networking stack and entity tracker.\nThis is an unofficial backport of tuxed's original mod.",
   "authors": [
-    "tuxed"
+    "MrMangoHands"
   ],
   "contact": {
-    "website": "https://github.com/astei/krypton",
-    "repo": "https://github.com/astei/krypton"
+    "website": "https://github.com/mrmangohands/krypton",
+    "issues": "https://github.com/mrmangohands/krypton/issues",
+    "sources": "https://github.com/mrmangohands/krypton"
   },
   "license": "MIT",
   "icon": "assets/krypton/icon.png",
