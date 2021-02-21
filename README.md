@@ -14,8 +14,8 @@ Krypton derives itself from Ancient Greek _kryptos_, which means "the hidden one
 it evident most of the benefit from Krypton is "hidden" but is noticeable by a server administrator.
 
 [The wiki contains important information &ndash; read it](https://github.com/astei/krypton/wiki).
-For support you can contact me at MrMangoHands#8467 on discord, or [open an issue][https://github.com/mrmangohands/krypton/issues].
-[Join Adnrew's Discord](https://discord.gg/RUGArxEQ8J) to discuss the mod.
+For support you can contact me at MrMangoHands#8467 on discord, or [open an issue](https://github.com/mrmangohands/krypton/issues).
+[Join Andrew's Discord](https://discord.gg/RUGArxEQ8J) to discuss the mod.
 
 ## Compiling / Releases
 
