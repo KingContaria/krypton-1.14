@@ -8,7 +8,7 @@ done in the [Velocity](https://velocitypowered.com/) and [Tuinity](https://githu
 projects.
 
 These are unofficial ports of [Andrew's original mod](https://github.com/astei/krypton) to versions that
-aren't maintained or present upstream. 1.16.1 is the current priority.
+aren't maintained or present upstream. 1.14.x is the current priority.
 
 Krypton derives itself from Ancient Greek _kryptos_, which means "the hidden one". This makes
 it evident most of the benefit from Krypton is "hidden" but is noticeable by a server administrator.
@@ -23,6 +23,6 @@ For support you can contact me at MrMangoHands#8467 on discord, or [open an issu
              ability to be used on every server, or support for every possible setup out there. Support
              for this mod is provided on a "best-effort" basis. **You have been warned.**
 
-Releases can be found [here](https://github.com/mrmangohands/krypton/releases).
+Releases can be found [here](https://github.com/KingContaria/krypton-1.14/releases).
 
 You can also compile the mod from source in the usual fashion.

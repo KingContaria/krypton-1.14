@@ -3,7 +3,7 @@ package me.steinborn.krypton.mixin.network.shared.misc;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufUtil;
 import io.netty.handler.codec.EncoderException;
-import net.minecraft.network.PacketByteBuf;
+import net.minecraft.util.PacketByteBuf;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;

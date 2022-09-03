@@ -32,7 +32,7 @@
   "accessWidener": "krypton.accesswidener",
   "depends": {
     "fabricloader": ">=0.8.0",
-    "minecraft": ["1.15", "1.15.1", "1.15.2", "1.16", "1.16.1", "1.16.2", "1.16.3"]
+    "minecraft": "1.14.x"
   },
 
   "custom": {

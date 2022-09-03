@@ -5,7 +5,7 @@ import com.velocitypowered.natives.util.MoreByteBufUtils;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
-import net.minecraft.network.PacketByteBuf;
+import net.minecraft.util.PacketByteBuf;
 
 public class MinecraftCompressEncoder extends MessageToByteEncoder<ByteBuf> {
 

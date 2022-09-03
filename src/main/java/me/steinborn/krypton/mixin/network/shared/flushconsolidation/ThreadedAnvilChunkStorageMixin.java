@@ -104,8 +104,8 @@ public abstract class ThreadedAnvilChunkStorageMixin {
             int oldChunkX = oldPos.getSectionX();
             int oldChunkZ = oldPos.getSectionZ();
 
-            int newChunkX = MathHelper.floor(player.getX()) >> 4;
-            int newChunkZ = MathHelper.floor(player.getZ()) >> 4;
+            int newChunkX = MathHelper.floor(player.x) >> 4;
+            int newChunkZ = MathHelper.floor(player.z) >> 4;
 
             if (Math.abs(oldChunkX - newChunkX) <= this.watchDistance * 2 && Math.abs(oldChunkZ - newChunkZ) <= this.watchDistance * 2) {
                 int minSendChunkX = Math.min(newChunkX, oldChunkX) - this.watchDistance;
@@ -150,7 +150,7 @@ public abstract class ThreadedAnvilChunkStorageMixin {
                     this.sendChunkDataPackets(player, packets, worldChunk);
                 }
 
-                DebugInfoSender.sendChunkWatchingChange(this.world, pos);
+                DebugInfoSender.method_19775(this.world, pos);
             }
         }
 
